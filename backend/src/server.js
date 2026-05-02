@@ -1,6 +1,9 @@
 require('dotenv').config();
 const app = require('./app');
 const connectDB = require('./config/db');
+const Class = require('./models/Class');
+const Message = require('./models/Message');
+console.log("models loaded");
 
 const PORT = process.env.PORT || 5000;
 

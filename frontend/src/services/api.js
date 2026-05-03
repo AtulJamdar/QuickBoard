@@ -2,7 +2,7 @@ import axios from 'axios';
 
 //The Base URL points to you Node.js server
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api/v1',
+    baseURL: 'quickboard-production-f0ef.up.railway.app',
 });
 
 export const createClass = (data) => API.post('/classes', data);

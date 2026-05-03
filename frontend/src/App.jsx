@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
 import CreateClass from './pages/CreateClass'
 import ClassRoom from './pages/ClassRoom';
 

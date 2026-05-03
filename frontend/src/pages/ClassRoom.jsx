@@ -44,7 +44,7 @@ const ClassRoom = () => {
         //Listen for new messages
         socket.on('new-message', (newMessage) => {
             //Functional update: adding new message to current list
-            setMessages((prev) => [...prev, newMessage]);
+            setMessages((prev) => [newMessage, ...prev]);
         });
 
         //Cleanup on unmount

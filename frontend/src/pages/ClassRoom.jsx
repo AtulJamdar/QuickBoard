@@ -36,7 +36,7 @@ const ClassRoom = () => {
     useEffect(() => {
         if(!classId) return;
 
-        const socket = io("http://quickboard-production-f0ef.up.railway.app");
+        const socket = io("https://quickboard-production-f0ef.up.railway.app");
 
         //Join specific room
         socket.emit('join-class', classId);

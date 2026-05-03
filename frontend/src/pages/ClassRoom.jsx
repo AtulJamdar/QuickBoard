@@ -36,7 +36,7 @@ const ClassRoom = () => {
     useEffect(() => {
         if(!classId) return;
 
-        const socket = io("http://localhost:5000");
+        const socket = io("http://quickboard-production-f0ef.up.railway.app");
 
         //Join specific room
         socket.emit('join-class', classId);
@@ -71,7 +71,7 @@ const ClassRoom = () => {
 
     if (loading) return <p>Loading your classroom...</p>;
     if (!classData) return <p>Classroom not found!</p>;
-    
+
   return (
     <div style={{ padding: '20px' }}>
             <h1>{classData.className}</h1>
